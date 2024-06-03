@@ -4,6 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import ModalProvider from "@/providers/modal-provider";
 import { BillingProvider } from "@/providers/billing-provider";
 import { Toaster } from "react-hot-toast";
+import { dark, neobrutalism } from "@clerk/themes";
 
 export const metadata: Metadata = {
   title: "Mercao",
@@ -16,9 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider
-      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
-    >
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <html lang="en">
         <body>
           <ModalProvider>

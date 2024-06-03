@@ -101,14 +101,14 @@ const Testimonials = () => {
     <div className="relative flex h-full mx-auto flex-col items-center justify-center overflow-hidden rounded-lg bg-[#0f0f0f] py-20 gap-5 min-h-screen">
       <div className='badge flex mx-auto max-w-max'>
         <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
-        <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>Testimonials</p>
+        <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>Customer testimonials</p>
       </div>
       <h1 className='flex justify-center w-full phone:text-4xl tablet:text-6xl lg:text-7xl text-center font-satoshi-bold tracking-tighter'>
         <span className='gradient-text px-2 tablet:py-3'>
           Words from our users
         </span>
       </h1>
-      <p className="mt-auto mb-4 phone:text-base tablet:text-lg text-[#9B9CA1] font-satoshi-medium tracking-tight phone:w-[90%] tablet:w-[50%] text-center">Explore the testimonials and feedback from our valued customers to gain insights into their experiences and satisfaction with our SaaS solution.</p>
+      <p className="mt-auto mb-4 phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium tracking-tight phone:w-[90%] tablet:w-[50%] text-center">Explore the testimonials and feedback from our valued customers to gain insights into their experiences and satisfaction with our SaaS solution.</p>
       <MarqueeCard items={firstRow} speed="slow"/>
       <MarqueeCard items={secondRow} speed="slow" direction="right" />
     </div>

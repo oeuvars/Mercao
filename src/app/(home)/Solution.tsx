@@ -5,7 +5,7 @@ type Props = {}
 
 const Solution = (props: Props) => {
   return (
-    <section className='min-h-screen phone:w-[95%] lg:w-[80%] mx-auto bg-[#0f0f0f]'>
+    <section className='min-h-screen phone:w-[93%] lg:w-[80%] mx-auto bg-[#0f0f0f]'>
       <div className='flex flex-col h-full justify-center z-20'>
          <div className='badge flex phone:mx-auto tablet:mx-0 tablet:mr-auto'>
             <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
@@ -17,12 +17,12 @@ const Solution = (props: Props) => {
                <br />
                <span className='gradient-text px-2'>notebook solution today.</span>
             </h1>
-            <div className='mt-auto mb-4 phone:text-base tablet:text-lg text-[#9B9CA1] font-satoshi-medium tracking-tight phone:mt-5 tablet:mt-0 text-center tablet:text-right'>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit.< br/> Nullam ut lorem quis lectus molestie.
+            <div className='mt-auto mb-4 phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium tracking-tight phone:mt-5 tablet:mt-0 text-center tablet:text-right'>
+               Our process in a nutshell for you workflow to be in a nutshell.
             </div>
          </div>
       </div>
-      <div className='phone:mt-8 tablet:mt-20 flex flex-col gap-7'>
+      <div className='phone:mt-8 tablet:mt-20 flex flex-col phone:gap-4 tablet:gap-7'>
          <div className="mx-auto p-4 flex flex-col md:flex-row items-stretch card-cover-two rounded-xl gap-10">
             <div className="tablet:w-1/2 tablet:pl-10 tablet:pr-16 flex flex-col justify-between tablet:py-10">
                <div className="flex justify-between mb-auto">

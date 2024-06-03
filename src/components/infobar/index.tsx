@@ -2,9 +2,10 @@
 import React, { useEffect } from 'react'
 import { Book, Headphones, Search } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import { UserButton } from '@clerk/nextjs'
+import { UserButton, useClerk } from '@clerk/nextjs'
 import { useBilling } from '@/providers/billing-provider'
 import { onPaymentDetails } from '@/app/(main)/(pages)/billing/_actions/payment-connections'
+import { dark } from '@clerk/themes'
 
 type Props = {}
 
@@ -23,6 +24,7 @@ const InfoBar = (props: Props) => {
     onGetPayment()
   }, [])
 
+  const { signOut } = useClerk();
 
   return (
     <div className="flex flex-row justify-end gap-6 items-center px-4 w-full bg-[#0a0a0a]">
@@ -70,7 +72,7 @@ const InfoBar = (props: Props) => {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-      <UserButton />
+      <UserButton appearance={{ baseTheme: dark }} afterSignOutUrl='/' />
     </div>
   )
 }

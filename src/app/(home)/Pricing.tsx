@@ -43,7 +43,7 @@ const pricingPlans: PricingPlan[] = [
 
 const Pricing = () => {
   return (
-    <section className="bg-[#0f0f0f] min-h-[85vh] phone:mt-20 tablet:mt-52">
+    <section className="bg-[#0f0f0f] min-h-[85vh] phone:mt-32 tablet:mt-52">
       <div className='badge flex mx-auto max-w-max'>
         <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
         <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>New curated pricing</p>
@@ -53,7 +53,7 @@ const Pricing = () => {
           Increase your productivity by 10x
         </span>
       </h1>
-      <p className="text-center phone:text-base tablet:text-lg text-[#9B9CA1] font-satoshi-medium">Our Plans Scale With Your Business.</p>
+      <p className="text-center phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium">Our Plans Scale With Your Business.</p>
       <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8 bg-transparent phone:mt-10 tablet:mt-20">
         {pricingPlans.map((plan, index) => (
           <CardContainer key={index} className="">

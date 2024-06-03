@@ -6,7 +6,7 @@ import { FC } from 'react';
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-[#0f0f0f] text-white w-full mt-auto">
+    <footer className="bg-[#0f0f0f] text-white w-full mt-auto absolute">
       <img src='/assets/footer.webp' alt='' className='w-full absolute blur-sm'/>
       <div className="mx-auto px-4 phone:grid tablet:flex justify-between pt-16 phone:w-[90%] tablet:w-[80%]">
         <div className=''>
@@ -45,8 +45,8 @@ const Footer: FC = () => {
           <div className="mt-2 space-y-2 flex flex-col">
             <Link href="#" className="text-neutral-400/80 font-satoshi-medium">Login</Link>
             <Link href="#" className="text-neutral-400/80 font-satoshi-medium">Register</Link>
-            <Link href="#" className="text-neutral-400/80 font-satoshi-medium">404</Link>
-            <Link href="#" className="text-neutral-400/80 font-satoshi-medium">Privacy policy</Link>
+            <Link href="/404" className="text-neutral-400/80 hover:text-neutral-300 animation font-satoshi-medium z-20">404</Link>
+            <Link href="/privacy-policy" className="text-neutral-400/80 hover:text-neutral-300 animation font-satoshi-medium z-20">Privacy policy</Link>
             <Link href="#" className="text-neutral-400/80 font-satoshi-medium">Terms of services</Link>
           </div>
         </div>

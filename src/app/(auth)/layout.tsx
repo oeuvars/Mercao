@@ -7,7 +7,7 @@ type Props = { children: React.ReactNode }
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <div className="flex items-center justify-center min-h-[88vh] w-full font-satoshi-medium">
+      <div className="flex items-center justify-center min-h-[70vh] w-full font-satoshi-medium">
         <div className='background h-full'>
           <div className='absolute inset-0 border-r-inherit'>
               <img src='/assets/background-pattern.svg' alt='' className='min-h-screen'/>
