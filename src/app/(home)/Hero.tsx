@@ -15,7 +15,7 @@ const Hero: FC = () => {
                <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
                <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>New Notion Integration</p>
             </div>
-            <h1 className='phone:text-5xl tablet:text-6xl lg:text-8xl text-center font-satoshi-bold tracking-tighter tablet:pb-5'>
+            <h1 className='phone:text-5xl tablet:text-6xl lg:text-8xl text-center font-satoshi-bold tracking-tight tablet:pb-5'>
                <span className='gradient-text px-2'>Automate your workflow</span>
             </h1>
             <h1 className='text-center phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium w-[90%] mx-auto'>Visualize workflows, automate tasks with Drag-and-drop tools to turn workflows into streamlined tasks.</h1>

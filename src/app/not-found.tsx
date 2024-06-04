@@ -1,8 +1,8 @@
-import Navbar from "@/components/global/navbar";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import Footer from "./(home)/Footer";
 import { ArrowRight } from "lucide-react";
+import Navbar from "./(extra)/_components/navbar";
 
 export default function NotFound() {
   return (

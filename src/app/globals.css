@@ -33,8 +33,8 @@
 }
 
 body {
-  font-family: 'Satoshi-Regular', sans-serif;
-  @apply bg-[#0f0f0f] min-h-screen text-neutral-50
+  font-family: "Satoshi-Regular", sans-serif;
+  @apply bg-[#0f0f0f] min-h-screen text-neutral-50;
 }
 
 @keyframes rotation {
@@ -56,7 +56,7 @@ body {
 }
 
 .animation {
-  @apply transition duration-300 ease-in-out
+  @apply transition duration-300 ease-in-out;
 }
 
 body {
@@ -120,7 +120,11 @@ body::-webkit-scrollbar {
 }
 
 .shadow-overlay {
-  background: linear-gradient(180deg, rgba(11, 14, 15, 0.82) 0%, rgba(24, 31, 33, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(11, 14, 15, 0.82) 0%,
+    rgba(24, 31, 33, 0) 100%
+  );
   bottom: 0;
   flex: none;
   height: 100%;
@@ -134,9 +138,11 @@ body::-webkit-scrollbar {
 .gradient-seperator {
   align-content: center;
   align-items: center;
-  background: radial-gradient(50% 10.8% at 47.199999999999996% 50%,
-      #ffea4d 0%,
-      rgb(11, 14, 15) 100%);
+  background: radial-gradient(
+    50% 10.8% at 47.199999999999996% 50%,
+    #ffea4d 0%,
+    rgb(11, 14, 15) 100%
+  );
   display: flex;
   flex: none;
   flex-direction: row;
@@ -158,7 +164,11 @@ body::-webkit-scrollbar {
   backdrop-filter: blur(24px);
   letter-spacing: -0.02em;
   background-color: rgba(255, 255, 255, 0.02);
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
   border-radius: 99px;
   align-items: center;
   margin-bottom: 16px;
@@ -166,8 +176,7 @@ body::-webkit-scrollbar {
   font-size: 14px;
   line-height: 1.8;
   display: flex;
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08),
     inset 0 2px 12px rgba(255, 255, 255, 0.04);
 }
 
@@ -178,15 +187,18 @@ body::-webkit-scrollbar {
   backdrop-filter: blur(24px);
   letter-spacing: -0.02em;
   background-color: rgba(255, 255, 255, 0.02);
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
   align-items: center;
   margin-bottom: 16px;
   padding: 6px 12px 6px 10px;
   font-size: 14px;
   line-height: 1.8;
   display: flex;
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08),
     inset 0 2px 12px rgba(255, 255, 255, 0.04);
 }
 .card-cover {
@@ -194,10 +206,13 @@ body::-webkit-scrollbar {
   backdrop-filter: blur(24px);
   letter-spacing: -0.02em;
   background-color: rgba(255, 255, 255, 0.02);
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
   line-height: 1.8;
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08),
     inset 0 2px 12px rgba(255, 255, 255, 0.04);
 }
 .card-cover-two {
@@ -205,10 +220,13 @@ body::-webkit-scrollbar {
   backdrop-filter: blur(24px);
   letter-spacing: -0.02em;
   background-color: rgba(255, 255, 255, 0.01);
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.01),
+    rgba(255, 255, 255, 0)
+  );
   line-height: 1.8;
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08),
     inset 0 2px 12px rgba(255, 255, 255, 0.04);
 }
 .cl-internal-105jsc1 {
@@ -216,35 +234,41 @@ body::-webkit-scrollbar {
   backdrop-filter: blur(24px);
   letter-spacing: -0.02em;
   background-color: rgba(255, 255, 255, 0.02);
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
   line-height: 1.8;
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08),
     inset 0 2px 12px rgba(255, 255, 255, 0.04);
 }
 .cl-internal-15amzqo {
-  @apply text-neutral-500 hover:no-underline hover:text-neutral-400 animation
+  @apply text-neutral-500 hover:no-underline hover:text-neutral-400 animation;
 }
 .cl-internal-1w67h8a {
   -webkit-backdrop-filter: blur(24px);
   backdrop-filter: blur(24px);
   letter-spacing: -0.02em;
   background-color: rgba(255, 255, 255, 0.02);
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
   line-height: 1.8;
-  box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08),
     inset 0 2px 12px rgba(255, 255, 255, 0.04);
-  @apply rounded-lg w-[23.7rem]
+  @apply rounded-xl w-[23.7rem] mt-5;
 }
 .cl-internal-10eooxm {
-  @apply rounded-md scroll bg-neutral-950 text-neutral-200
+  @apply rounded-md scroll bg-neutral-950 text-neutral-200;
 }
 .cl-internal-1p383is {
-  @apply text-neutral-200 font-satoshi-medium tracking-tight gradient-text
+  @apply text-neutral-200 font-satoshi-medium tracking-tight gradient-text;
 }
 .cl-internal-13zhnx0 {
-  @apply text-neutral-400
+  @apply text-neutral-400;
 }
 .card-wrapper {
   position: absolute;
@@ -253,7 +277,7 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: 0;
   left: 0;
-  background-size: 128.00px auto;
+  background-size: 128px auto;
   background-image: url(https://framerusercontent.com/images/6mcf62RlDfRfU61Yg5vb2pefpi4.png);
   border: 0;
   background-repeat: repeat;
@@ -272,7 +296,7 @@ body::-webkit-scrollbar {
     height: 28px;
     z-index: 10;
     backdrop-filter: blur(5px);
-    @apply drop-shadow-[0_0px_10px_rgba(70,70,70,0.15)]
+    @apply drop-shadow-[0_0px_10px_rgba(70,70,70,0.15)];
   }
 }
 

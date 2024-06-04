@@ -53,7 +53,7 @@ const WorkflowIconHelper = ({ type }: Props) => {
       )
     default:
       return (
-        <Image src="/icons/connections/discord.svg" alt='mail' radius='none' className='rounded-none w-10 h-10'/>
+        <Image src="/icons/connections/discord.svg" alt='mail' className='rounded-none w-10 h-10'/>
       )
   }
 }

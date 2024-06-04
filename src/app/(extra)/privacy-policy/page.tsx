@@ -4,7 +4,6 @@ import Navbar from "@/components/global/navbar";
 export default function Component() {
    return (
      <section className="flex flex-col justify-between min-h-screen">
-        <Navbar />
         <div className="space-y-6 py-32 w-[80%] mx-auto tracking-tight">
           <div>
             <h1 className="phone:text-5xl tablet:text-6xl lg:text-8xl text-center font-satoshi-bold tracking-tighter tablet:pb-5">
@@ -92,9 +91,6 @@ export default function Component() {
               .
             </p>
           </div>
-        </div>
-        <div className="mt-auto">
-          <Footer />
         </div>
      </section>
    )
