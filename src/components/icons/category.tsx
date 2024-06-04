@@ -1,5 +1,3 @@
-import clsx from "clsx";
-import { Zap } from "lucide-react";
 import React from "react";
 
 type Props = { selected: boolean };
@@ -12,7 +10,7 @@ function Category({ selected }: Props) {
       height="28"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#d4d4d4"
       strokeWidth="1.7142857142857142"
       strokeLinecap="round"
       strokeLinejoin="round"

@@ -237,6 +237,15 @@ body::-webkit-scrollbar {
     inset 0 2px 12px rgba(255, 255, 255, 0.04);
   @apply rounded-lg w-[23.7rem]
 }
+.cl-internal-10eooxm {
+  @apply rounded-md scroll bg-neutral-950 text-neutral-200
+}
+.cl-internal-1p383is {
+  @apply text-neutral-200 font-satoshi-medium tracking-tight gradient-text
+}
+.cl-internal-13zhnx0 {
+  @apply text-neutral-400
+}
 .card-wrapper {
   position: absolute;
   border-radius: inherit;

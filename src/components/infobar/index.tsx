@@ -45,7 +45,7 @@ const InfoBar = (props: Props) => {
         <Search />
         <input
           placeholder="Quick Search"
-          className="border-none rounded-md bg-neutral-900 border-2 border-neutral-50 py-2 px-5 font-satoshi-bold placeholder:font-satoshi-medium focus:outline-neutral-700"
+          className="border-none rounded-md bg-neutral-900 border-2 border-neutral-50 py-2 px-5 font-satoshi-bold placeholder:font-satoshi-medium focus:outline-none focus:outline-neutral-700"
         />
       </span>
       <TooltipProvider>

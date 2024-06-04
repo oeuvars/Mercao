@@ -62,7 +62,7 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
                 <Input
                   {...field}
                   placeholder="Name"
-                  className='rounded-md bg-[#222222]/50 border-none focus:outline-none'
+                  className='rounded-md card-cover py-6 font-satoshi-medium text-base border-none focus:outline-none text-neutral-200'
                 />
               </FormControl>
               <FormMessage />
@@ -81,7 +81,7 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
                   disabled={true}
                   placeholder="Email"
                   type="email"
-                  className='rounded-md bg-[#222222]/50 border-none'
+                  className='rounded-md card-cover py-6 font-satoshi-medium text-base border-none focus:outline-none'
                 />
               </FormControl>
               <FormMessage />

@@ -23,7 +23,7 @@ export const SubscriptionCard = ({ onPayment, products, tier }: Props) => {
       {products &&
         products.map((product: any) => (
           <Card
-            className="p-3 border-neutral-600 border-dashed"
+            className="p-3 card-cover border-none"
             key={product.id}
           >
             <CardHeader>

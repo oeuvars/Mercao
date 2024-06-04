@@ -18,7 +18,7 @@ const MenuOptions = (props: Props) => {
   const pathName = usePathname()
 
   return (
-    <nav className="bg-[#0a0a0a] h-screen overflow-scroll justify-between flex items-center flex-col gap-10 py-4 px-4">
+    <nav className="bg-[#0a0a0a] h-screen justify-between flex items-center flex-col gap-10 py-4 px-4">
       <div className="flex items-center justify-center flex-col gap-8">
         <Link
           className="flex font-bold flex-row "

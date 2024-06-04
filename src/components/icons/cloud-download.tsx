@@ -6,7 +6,7 @@ type Props = { selected: boolean }
 
 const Templates = ({ selected }: Props) => {
   return (
-    <CloudDownload />
+    <CloudDownload className='text-[#d4d4d4]'/>
   )
 }
 

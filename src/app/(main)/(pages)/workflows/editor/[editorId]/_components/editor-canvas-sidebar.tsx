@@ -39,10 +39,7 @@ const EditorCanvasSidebar = ({ nodes }: Props) => {
 
   return (
     <aside>
-      <Tabs
-        defaultValue="actions"
-        className="h-[93vh] overflow-scroll pb-24"
-      >
+      <Tabs defaultValue="actions" className="h-[93vh] overflow-scroll pb-28 scroll">
         <TabsList className="bg-transparent flex border border-dashed border-neutral-700 rounded-sm w-[95%] m-auto py-6">
           <TabsTrigger value="actions" className='font-satoshi-medium mx-auto w-full rounded-md py-2'>Actions</TabsTrigger>
           <div className="divider"></div>

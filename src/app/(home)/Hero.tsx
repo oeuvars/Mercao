@@ -16,7 +16,7 @@ const Hero: FC = () => {
                <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>New Notion Integration</p>
             </div>
             <h1 className='phone:text-5xl tablet:text-6xl lg:text-8xl text-center font-satoshi-bold tracking-tighter tablet:pb-5'>
-               <span className='gradient-text px-2'>Automate your worflow</span>
+               <span className='gradient-text px-2'>Automate your workflow</span>
             </h1>
             <h1 className='text-center phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium w-[90%] mx-auto'>Visualize workflows, automate tasks with Drag-and-drop tools to turn workflows into streamlined tasks.</h1>
             <div className='phone:w-[90%] tablet:w-[50%] md:w-[33%] lg:w-[25%] flex relative'>

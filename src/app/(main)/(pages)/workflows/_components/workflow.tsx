@@ -32,15 +32,14 @@ const Workflow = ({ description, id, name, publish }: Props) => {
   const onGetFlowPath = async () => {
     try {
       const response = await onGetWorkflows();
-      const flowPathString = response?.[0]?.flowPath;
-      const flowPathArray = flowPathString ? JSON.parse(flowPathString.replace(/'/g, '"')) : [];
-
-      if (Array.isArray(flowPathArray)) {
+      const workflow = response?.find((w) => w.id === id);
+      if (workflow && workflow.flowPath) {
+        const flowPathArray = JSON.parse(workflow.flowPath.replace(/'/g, '"'));
         setFlowIcons(flowPathArray);
-        setLoading(false)
       } else {
-        console.error('Invalid flowPath format');
+        setFlowIcons([]);
       }
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching workflows:', error);
     }
@@ -50,7 +49,7 @@ const Workflow = ({ description, id, name, publish }: Props) => {
   }, [])
 
   return (
-    <Card className='flex w-full items-center justify-between border border-neutral-700 border-dashed hover:bg-neutral-950/40 animation cursor-pointer'>
+    <Card className='flex w-full items-center justify-between border-none hover:bg-neutral-900/50 animation cursor-pointer card-cover'>
       <CardHeader className='flex flex-col gap-4 w-full'>
         <Link href={`/workflows/editor/${id}`}>
           <div className="flex flex-row gap-4">
