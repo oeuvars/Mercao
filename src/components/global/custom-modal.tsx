@@ -29,10 +29,10 @@ import { Button } from '@nextui-org/button'
        open={isOpen}
        onClose={handleClose}
      >
-       <DrawerContent className='bg-black/10 backdrop-blur-lg border-none outline-none'>
+       <DrawerContent className='bg-neutral-950/20 backdrop-blur-lg border-none outline-none'>
          <DrawerHeader>
            <DrawerTitle className="text-center font-satoshi-medium text-4xl tracking-normal"><span className='gradient-text px-1'>{title}</span></DrawerTitle>
-           <DrawerDescription className="text-center flex flex-col items-center gap-16 h-[25vw] overflow-scroll font-satoshi-medium text-lg text-neutral-500">
+           <DrawerDescription className="text-center flex flex-col items-center gap-16 h-[25vw] overflow-scroll scroll font-satoshi-medium text-lg text-neutral-500">
              {subheading}
              {children}
            </DrawerDescription>
