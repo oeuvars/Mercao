@@ -69,7 +69,9 @@ const Workflow = ({ description, id, name, publish }: Props) => {
           </div>
           <hr className='border-t border-neutral-600 border-dashed my-5 w-[15%]'/>
           <div className="">
-            <CardTitle className="text-lg tracking-wide">{name}</CardTitle>
+            <CardTitle className="text-xl tracking-tight font-satoshi-bold">
+              <span className='gradient-text saturate-[0.8] pr-1'>{name}</span>
+            </CardTitle>
             <CardDescription className='text-base text-neutral-400 font-satoshi-medium'>{description}</CardDescription>
           </div>
         </Link>
