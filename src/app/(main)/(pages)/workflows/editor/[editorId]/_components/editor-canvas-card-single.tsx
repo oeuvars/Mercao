@@ -5,7 +5,6 @@ import { Position, useNodeId } from 'reactflow'
 import EditorCanvasIconHelper from './editor-canvas-card-icon-helper'
 import CustomHandle from './custom-handle'
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import clsx from 'clsx'
 import { Badge } from '@/components/ui/badge'
 
 type Props = {}
@@ -36,12 +35,12 @@ const EditorCanvasCardSingle = ({ data }: { data: EditorCanvasCardType }) => {
               },
             })
         }}
-        className="relative max-w-[400px] card-cover-two border-none"
+        className="relative w-[400px] card-cover border-none"
       >
         <CardHeader className="flex flex-row items-center gap-4">
           <div className='mb-auto mt-3'>{logo}</div>
           <div>
-            <CardTitle className="text-lg font-satoshi-medium tracking-wide">{data.title}</CardTitle>
+            <CardTitle className="text-lg font-satoshi-bold">{data.title}</CardTitle>
             <CardDescription>
               <p className='text-xs font-satoshi-medium text-neutral-600'><span>ID: </span> {nodeId}</p>
               <p className='font-satoshi-medium'>{data.description}</p>

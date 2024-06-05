@@ -454,7 +454,7 @@ const MultipleSelector = React.forwardRef<
                     <CommandGroup
                       key={key}
                       heading={key}
-                      className="h-full overflow-auto backdrop-blur-md text-base bg-neutral-500/5 hover:bg-neutral-600/5 animation"
+                      className="h-full overflow-auto text-base card-cover-two animation border-none text-neutral-300"
                     >
                       <>
                         {dropdowns.map((option) => {

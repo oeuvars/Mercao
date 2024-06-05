@@ -46,7 +46,7 @@ const RenderConnectionAccordion = ({ connection, state }: { connection: Connecti
             <div className="py-6">
               {slackChannels?.length ? (
                 <>
-                  <div className="mb-4 ml-1 font-satoshi-medium text-base text-neutral-400">
+                  <div className="mb-4 ml-1 font-satoshi-medium text-base text-neutral-500">
                     Select the slack channels to send notification and messages:
                   </div>
                   <MultipleSelector
@@ -56,7 +56,7 @@ const RenderConnectionAccordion = ({ connection, state }: { connection: Connecti
                     placeholder="Select channels"
                     className='placeholder:font-satoshi-bold placeholder:text-4xl font-satoshi-medium'
                     emptyIndicator={
-                      <p className="text-center text-lg leading-10 text-gray-600 dark:text-gray-400">
+                      <p className="text-center text-lg leading-10 text-neutral-400">
                         no results found.
                       </p>
                     }

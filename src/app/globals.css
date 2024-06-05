@@ -286,25 +286,22 @@ body::-webkit-scrollbar {
 
 .react-flow__controls {
   & button {
-    background-color: rgba(179, 181, 198, 0.114);
-    transition: background-color 0.2s ease-in-out;
-    color: #fff;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
     border: none;
     margin-top: 0.5rem;
     width: 28px;
     height: 28px;
-    z-index: 10;
-    backdrop-filter: blur(5px);
-    @apply drop-shadow-[0_0px_10px_rgba(70,70,70,0.15)];
+    @apply card-cover backdrop-blur-sm;
   }
 }
 
 .react-flow__controls button:hover {
-  background-color: rgba(179, 181, 198, 0.25);
+  background-color: rgba(179, 181, 198, 0.05);
 }
 
 .react-flow__controls button svg,
 .react-flow__controls button i {
-  fill: #eaeaea;
+  fill: #c8c8c8;
+  width: 15px;
+  height: 15px;
 }

@@ -58,7 +58,7 @@ const ContentBasedOnTitle = ({
 
   // @ts-ignore
   const nodeConnectionType: any = nodeConnection[nodeMapper[title]]
-  if (!nodeConnectionType) return <p>Not connected</p>
+  if (!nodeConnectionType) return <p></p>
 
   const isConnected = title === 'Google Drive' ? !nodeConnection.isLoading : !!nodeConnectionType[
           `${
@@ -72,11 +72,11 @@ const ContentBasedOnTitle = ({
           }`
         ]
 
-  if (!isConnected) return <p>Not connected</p>
+  if (!isConnected) return <p></p>
 
   return (
     <AccordionContent className='pb-[2.25rem]'>
-      <Card className='border-dashed border-neutral-600'>
+      <Card className='border-none card-cover-two'>
         {title === 'Discord' && (
           <div className='flex flex-col w-[90%] pt-5 mx-auto'>
             <CardTitle className='text-neutral-500 text-lg font-satoshi-medium tracking-normal'>{nodeConnectionType.webhookName}</CardTitle>
@@ -90,7 +90,7 @@ const ContentBasedOnTitle = ({
             type="text"
             value={nodeConnectionType.content}
             onChange={(event) => onContentChange(nodeConnection, title, event)}
-            className='border-neutral-500 py-5 font-satoshi-medium text-base text-neutral-300'
+            className='border-dashed border-neutral-600 py-5 font-satoshi-medium text-base text-neutral-300'
           />
 
           {JSON.stringify(file) !== '{}' && title !== 'Google Drive' && (

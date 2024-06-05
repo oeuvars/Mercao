@@ -59,14 +59,14 @@ const EditorCanvasSidebar = ({ nodes }: Props) => {
               <Card
                 key={cardKey}
                 draggable
-                className="w-full cursor-grab border-none card-cover-two"
+                className="w-full cursor-grab border-none card-cover"
                 onDragStart={(event) =>
                   onDragStart(event, cardKey as EditorCanvasTypes)
                 }
               >
                 <CardHeader className="flex flex-row items-center gap-4 p-4">
                   <EditorCanvasIconHelper type={cardKey as EditorCanvasTypes}/>
-                  <CardTitle className="text-lg tracking-normal font-satoshi-medium">
+                  <CardTitle className="text-lg tracking-normal font-satoshi-bold">
                     <span className='gradient-text pr-1'>{cardKey}</span>
                     <CardDescription className='text-neutral-400 font-satoshi-regular'>{cardValue.description}</CardDescription>
                   </CardTitle>
@@ -78,8 +78,12 @@ const EditorCanvasSidebar = ({ nodes }: Props) => {
           value="settings"
           className="-mt-6"
         >
-          <div className="px-2 py-4 text-center text-3xl font-satoshi-bold">
-            <span className='gradient-text saturate-150 px-1'>{state.editor.selectedNode.data.title}</span>
+          <div className="px-2 pt-2 pb-6 text-center text-3xl font-satoshi-bold tracking-tight">
+            {state.editor.selectedNode.data.title ? (
+              <span className='gradient-text saturate-150 px-1'>{state.editor.selectedNode.data.title}</span>
+            ) : (
+              <span className='px-1 text-neutral-600'>Please select a card first</span>
+            )}
           </div>
 
           <Accordion type="multiple" className='w-[95%] mx-auto'>
