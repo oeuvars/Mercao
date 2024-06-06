@@ -39,7 +39,9 @@ const ConnectionCard = ({
           />
         </div>
         <div>
-          <CardTitle className="text-lg tracking-wide">{title}</CardTitle>
+          <CardTitle className="text-lg tracking-wide">
+            <span className='gradient-text tracking-tight font-satoshi-bold'>{title}</span>
+          </CardTitle>
           <CardDescription className='font-satoshi-medium text-neutral-300 text-base'>{description}</CardDescription>
         </div>
       </CardHeader>

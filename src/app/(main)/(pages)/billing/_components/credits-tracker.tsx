@@ -9,7 +9,7 @@ type Props = {
 
 const CreditTracker = ({ credits, tier }: Props) => {
   return (
-    <div className="py-3 px-6">
+    <div className="px-6">
       <Card className="p-6 border-neutral-700 border-dashed">
         <CardContent className="flex flex-col gap-6">
           <CardTitle className="font-satoshi-medium"><span className='gradient-text text-2xl'>Credit Tracker</span></CardTitle>

@@ -11,12 +11,12 @@ const Payment = ({ selected }: Props) => {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      width={30}
     >
       <path
         d="M2 8.50488H22"
         stroke="#d4d4d4"
         stroke-width="1.5"
-        stroke-miterlimit="10"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -24,7 +24,6 @@ const Payment = ({ selected }: Props) => {
         d="M6 16.5049H8"
         stroke="#d4d4d4"
         stroke-width="1.5"
-        stroke-miterlimit="10"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -32,7 +31,6 @@ const Payment = ({ selected }: Props) => {
         d="M10.5 16.5049H14.5"
         stroke="#d4d4d4"
         stroke-width="1.5"
-        stroke-miterlimit="10"
         stroke-linecap="round"
         stroke-linejoin="round"
       />

@@ -109,7 +109,7 @@ const Connections = async (props: Props) => {
       </h1>
       <div className="relative flex flex-col gap-4">
         <section className="flex flex-col gap-4 p-6 font-satoshi-medium">
-          <p className='text-neutral-300 text-lg'>Connect all your apps directly from here. You may need to connect these apps regularly to refresh verification.</p>
+          <p className='text-neutral-300 text-lg tracking-tight'>Connect all your apps directly from here. You may need to connect these apps regularly to refresh verification.</p>
           {CONNECTIONS.map((connection) => (
             <ConnectionCard
               key={connection.title}
