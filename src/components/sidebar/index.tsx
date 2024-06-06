@@ -52,7 +52,7 @@ const MenuOptions = (props: Props) => {
                     className="card-cover ml-2"
                   >
                     <p className='font-satoshi-medium tracking-tight text-sm'>
-                      <span className='gradient-text'>{menuItem.name}</span>
+                      <span className='text-neutral-200'>{menuItem.name}</span>
                     </p>
                   </TooltipContent>
                 </Tooltip>
