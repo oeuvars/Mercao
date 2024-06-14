@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState, ReactNode } from 'react'
 
 export type ConnectionProviderProps = {
   discordNode: {
@@ -46,7 +46,7 @@ export type ConnectionProviderProps = {
 }
 
 type ConnectionWithChildProps = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const InitialValues: ConnectionProviderProps = {
@@ -96,9 +96,7 @@ export const ConnectionsProvider = ({ children }: ConnectionWithChildProps) => {
   const [notionNode, setNotionNode] = useState(InitialValues.notionNode)
   const [slackNode, setSlackNode] = useState(InitialValues.slackNode)
   const [isLoading, setIsLoading] = useState(InitialValues.isLoading)
-  const [workflowTemplate, setWorkFlowTemplate] = useState(
-    InitialValues.workflowTemplate
-  )
+  const [workflowTemplate, setWorkFlowTemplate] = useState(InitialValues.workflowTemplate)
 
   const values = {
     discordNode,
