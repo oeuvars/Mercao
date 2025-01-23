@@ -151,6 +151,7 @@ export const onGetWorkflows = async () => {
 
 export const onCreateWorkflow = async (name: string, description: string) => {
   const user = await currentUser()
+  console.log(user)
 
   if (user) {
     //create new workflow

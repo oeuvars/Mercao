@@ -6,8 +6,8 @@ import { FC } from 'react';
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-[#0f0f0f] text-white w-full mt-auto absolute">
-      <img src='/assets/footer.webp' alt='' className='w-full absolute blur-sm'/>
+    <footer className="bg-[#0f0f0f] text-white w-full mt-auto relative overflow-hidden">
+      <img src='/assets/footer.webp' alt='' className='w-full h-full absolute blur-[2px] object-cover'/>
       <div className="mx-auto px-4 phone:grid tablet:flex justify-between pt-16 phone:w-[90%] tablet:w-[80%]">
         <div className=''>
           <Link href="/" className="flex items-center gap-2 phone:justify-center tablet:justify-start">
@@ -51,7 +51,7 @@ const Footer: FC = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 text-center border-t border-neutral-800 pt-4 text-neutral-600 font-satoshi-medium">
+      <div className="mt-12 text-center border-t border-neutral-800 py-2 text-neutral-600 font-satoshi-medium">
         <p>Copyright ©2024 Oeuvars</p>
       </div>
     </footer>

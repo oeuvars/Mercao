@@ -8,7 +8,7 @@ import Testimonials from "./(home)/Testimonials";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="min-h-screen">
       <Navbar />
       <Hero />
       <Brands />
