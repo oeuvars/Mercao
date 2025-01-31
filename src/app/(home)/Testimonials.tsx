@@ -98,7 +98,7 @@ const ReviewCard = ({ img, name, username, body }: { img: string; name: string; 
 
 const Testimonials = () => {
   return (
-    <div className="relative flex h-full mx-auto flex-col items-center justify-center overflow-hidden rounded-lg bg-[#0f0f0f] py-20 gap-5 min-h-screen">
+    <div className="relative flex h-full mx-auto flex-col items-center justify-center overflow-hidden rounded-lg py-20 gap-5 min-h-screen">
       <div className='badge flex mx-auto max-w-max'>
         <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
         <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>Customer testimonials</p>

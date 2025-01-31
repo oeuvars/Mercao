@@ -1,11 +1,19 @@
+import { cn } from '@/lib/utils'
 import { Image } from '@nextui-org/image'
+import { Pacifico } from 'next/font/google'
 import { FC } from 'react'
 
 type Props = {}
 
+const pacifico = Pacifico({
+   subsets: ["latin"],
+   weight: ["400"],
+   variable: "--font-pacifico",
+ })
+
 const Solution = (props: Props) => {
   return (
-    <section className='min-h-screen phone:w-[93%] lg:w-[80%] mx-auto bg-[#0f0f0f]'>
+    <section className='min-h-screen phone:w-[93%] lg:w-[60%] mx-auto mt-20'>
       <div className='flex flex-col h-full justify-center z-20'>
          <div className='badge flex phone:mx-auto tablet:mx-0 tablet:mr-auto'>
             <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
@@ -15,9 +23,9 @@ const Solution = (props: Props) => {
             <h1 className='phone:text-4xl tablet:text-6xl phone:text-center tablet:text-left font-satoshi-bold tracking-tighter tablet:pb-5'>
                <span className='gradient-text px-2'>Discover a simple</span>
                <br />
-               <span className='gradient-text px-2'>notebook solution today.</span>
+               <span className={cn('gradient-text px-2 font-normal', pacifico.className)}>notebook solution today.</span>
             </h1>
-            <div className='mt-auto mb-4 phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium tracking-tight phone:mt-5 tablet:mt-0 text-center tablet:text-right'>
+            <div className={cn('mt-auto mb-4 phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium tracking-tight phone:mt-5 tablet:mt-0 text-center tablet:text-right')}>
                Our process in a nutshell for you workflow to be in a nutshell.
             </div>
          </div>

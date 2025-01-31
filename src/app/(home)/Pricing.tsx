@@ -43,7 +43,7 @@ const pricingPlans: PricingPlan[] = [
 
 const Pricing = () => {
   return (
-    <section className="bg-[#0f0f0f] min-h-[85vh] phone:mt-32 tablet:mt-52">
+    <section className="min-h-[60vh] phone:mt-32 tablet:mt-52">
       <div className='badge flex mx-auto max-w-max'>
         <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
         <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>New curated pricing</p>
