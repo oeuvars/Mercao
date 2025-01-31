@@ -6,7 +6,7 @@ import { BillingProvider } from "@/providers/billing-provider";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Mercao",
+  title: "Mercao | Workflow Automation",
   description: "Automate your business with Drag-and-drop tools to turn workflows into streamlined tasks.",
 };
 

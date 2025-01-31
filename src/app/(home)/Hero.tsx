@@ -78,9 +78,9 @@ function ElegantShape({
 }
 
 export default function HeroGeometric({
-  badge = "Kokonut UI",
-  title1 = "Elevate Your",
-  title2 = "Digital Vision",
+  badge = "New Notion Integration",
+  title1 = "Automate Your",
+  title2 = "Workflows",
 }: {
   badge?: string
   title1?: string
@@ -159,17 +159,17 @@ export default function HeroGeometric({
             animate="visible"
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
           >
-            <Image src="https://kokonutui.com/logo.svg" alt="Kokonut UI" width={20} height={20} />
+            <Image src="/icons/star.svg" alt="Kokonut UI" width={20} height={20} />
             <span className="text-sm text-white/60 tracking-wide">{badge}</span>
           </motion.div>
 
           <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible">
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">{title1}</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80 tracking-tight font-satoshi-medium">{title1}</span>
               <br />
               <span
                 className={cn(
-                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 ",
+                  "gradient-text pr-2",
                   pacifico.className,
                 )}
               >
@@ -179,8 +179,8 @@ export default function HeroGeometric({
           </motion.div>
 
           <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
-            <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-              Crafting exceptional digital experiences through innovative design and cutting-edge technology.
+            <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-satoshi-regular mx-auto px-4">
+               Streamline Your Tasks, Automate Your Success: Turn complex workflows into seamless, efficient processes with just a few clicks.
             </p>
           </motion.div>
         </div>
