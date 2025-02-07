@@ -1,0 +1,19 @@
+{
+   "build": {
+     "env": {
+       "DOCKER_BUILD": "true"
+     }
+   },
+   "functions": {
+     "app": {
+       "runtime": "bun@1.2.2",
+       "maxDuration": 60
+     }
+   },
+   "routes": [
+     {
+       "src": "/(.*)",
+       "dest": "/app/$1"
+     }
+   ]
+ }
