@@ -1,9 +1,9 @@
 import Navbar from "@/components/global/navbar";
-import Hero from "./(base)/hero";
-import Pricing from "./(base)/pricing";
+import Hero from "./(home)/hero";
+import Pricing from "./(home)/pricing";
 import Footer from "../components/global/footer";
-import Solution from "./(base)/solution";
-import Testimonials from "./(base)/testimonials";
+import Solution from "./(home)/solution";
+import Testimonials from "./(home)/testimonials";
 
 export default function Home() {
   return (
