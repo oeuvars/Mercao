@@ -3,6 +3,5 @@
      "env": {
        "DOCKER_BUILD": "true"
      }
-   },
-   "cacheOptOut": true
+   }
  }
