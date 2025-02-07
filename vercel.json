@@ -3,7 +3,5 @@
      "env": {
        "DOCKER_BUILD": "true"
      }
-   },
-   "buildCommand": "docker build .",
-   "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
+   }
  }
