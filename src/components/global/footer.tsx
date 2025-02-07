@@ -1,13 +1,11 @@
 import { Image } from '@nextui-org/image';
 import { GitHubLogoIcon, InstagramLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
-import { FacebookIcon } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-[#0f0f0f] text-white w-full mt-auto relative overflow-hidden">
-      <img src='/assets/footer.webp' alt='' className='w-full h-full absolute blur-[2px] object-cover'/>
+    <footer className="text-white w-full mt-auto relative overflow-hidden">
       <div className="mx-auto px-4 phone:grid tablet:flex justify-between pt-16 phone:w-[90%] tablet:w-[80%]">
         <div className=''>
           <Link href="/" className="flex items-center gap-2 phone:justify-center tablet:justify-start">

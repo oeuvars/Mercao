@@ -79,26 +79,10 @@ const reviews = [
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({ img, name, username, body }: { img: string; name: string; username: string; body: string }) => {
-  return (
-    <figure className="w-96 h-60 cursor-pointer overflow-hidden rounded-xl p-4 card-cover-two mx-2.5">
-      <div className="flex flex-row items-center gap-2">
-        <Image className="rounded-none" width="36" height="36" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-lg font-satoshi-medium tracking-tight text-neutral-200">
-            {name}
-          </figcaption>
-          <p className="text-sm font-satoshi-regular text-white/40 tracking-tight">{username}</p>
-        </div>
-      </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
-    </figure>
-  );
-};
 
 const Testimonials = () => {
   return (
-    <div className="relative flex h-full mx-auto flex-col items-center justify-center overflow-hidden rounded-lg py-20 gap-5 min-h-screen">
+    <div className="relative flex h-full mx-auto flex-col items-center justify-center overflow-hidden rounded-lg py-20 gap-5">
       <div className='badge flex mx-auto max-w-max'>
         <img src='/icons/star.svg' alt='star' className='my-auto w-6 h-6'/>
         <p className='font-satoshi-medium text-sm text-neutral-300/80 text-nowrap'>Customer testimonials</p>

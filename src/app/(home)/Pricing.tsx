@@ -1,9 +1,15 @@
 "use client"
 
 import { CardBody, CardContainer, CardItem } from "@/components/global/3d-card";
+import { cn } from "@/lib/utils";
 import { Button } from "@nextui-org/button";
 import { CheckIcon } from "lucide-react";
-import React from "react";
+import { Instrument_Serif } from "next/font/google";
+
+export const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 
 type PricingPlan = {
   title: string;
@@ -50,7 +56,7 @@ const Pricing = () => {
       </div>
       <h1 className='flex justify-center w-full phone:text-4xl tablet:text-6xl lg:text-7xl text-center font-satoshi-bold tracking-tighter'>
         <span className='gradient-text px-2 py-3 phone:w-[80%] tablet:w-full'>
-          Increase your productivity by 10x
+          Increase your productivity by <span className={cn("tracking-normal", instrumentSerif.className )}>10x</span>
         </span>
       </h1>
       <p className="text-center phone:text-sm tablet:text-lg text-[#9B9CA1] font-satoshi-medium">Our Plans Scale With Your Business.</p>

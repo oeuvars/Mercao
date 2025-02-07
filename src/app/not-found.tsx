@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
-import Footer from "./(home)/Footer";
+import Footer from "../components/global/footer";
 import { ArrowRight } from "lucide-react";
 import Navbar from "./(extra)/_components/navbar";
 

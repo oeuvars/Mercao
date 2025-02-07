@@ -1,14 +1,13 @@
 import Navbar from "@/components/global/navbar";
-import Hero from "./(home)/Hero";
-import Brands from "./(home)/Brands";
-import Pricing from "./(home)/Pricing";
-import Footer from "./(home)/Footer";
-import Solution from "./(home)/Solution";
-import Testimonials from "./(home)/Testimonials";
+import Hero from "./(home)/hero";
+import Pricing from "./(home)/pricing";
+import Footer from "../components/global/footer";
+import Solution from "./(home)/solution";
+import Testimonials from "./(home)/testimonials";
 
 export default function Home() {
   return (
-    <main className="min-h-screen !bg-[#030303]">
+    <main className="min-h-screen">
       <Navbar />
       <Hero />
       <Solution />

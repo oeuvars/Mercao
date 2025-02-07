@@ -1,14 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Pacifico } from "next/font/google"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import { Instrument_Serif } from "next/font/google"
+import { GradientButton } from "@/components/ui/gradient-button"
+import Link from "next/link"
 
-const pacifico = Pacifico({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-pacifico",
 })
 
 function ElegantShape({
@@ -167,12 +168,7 @@ export default function HeroGeometric({
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80 tracking-tight font-satoshi-medium">{title1}</span>
               <br />
-              <span
-                className={cn(
-                  "gradient-text pr-2",
-                  pacifico.className,
-                )}
-              >
+              <span className={cn("gradient-text pr-5 italic", instrumentSerif.className )}>
                 {title2}
               </span>
             </h1>
@@ -182,6 +178,11 @@ export default function HeroGeometric({
             <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-satoshi-regular mx-auto px-4">
                Streamline Your Tasks, Automate Your Success: Turn complex workflows into seamless, efficient processes with just a few clicks.
             </p>
+          </motion.div>
+          <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
+            <Link href="/dashboard">
+              <GradientButton variant="variant" className="font-satoshi-regular text-neutral-300">Get Started</GradientButton>
+            </Link>
           </motion.div>
         </div>
       </div>

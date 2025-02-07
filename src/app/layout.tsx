@@ -4,6 +4,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 import ModalProvider from "@/providers/modal-provider";
 import { BillingProvider } from "@/providers/billing-provider";
 import { Toaster } from "react-hot-toast";
+import { cn } from "@/lib/utils";
+
 
 export const metadata: Metadata = {
   title: "Mercao | Workflow Automation",
@@ -21,7 +23,7 @@ export default function RootLayout({
         <head>
           <meta name="google-site-verification" content="whgGbmwHfJwHnJJqghEexN8OGasfii20SNMbgXr_Iuk" />
         </head>
-        <body>
+        <body className={cn("bg-[#030303] min-h-screen text-neutral-50 font-satoshi-regular")}>
           <ModalProvider>
             <BillingProvider>
               <Toaster position="top-right" reverseOrder={false} />

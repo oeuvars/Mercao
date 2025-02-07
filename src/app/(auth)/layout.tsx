@@ -1,8 +1,10 @@
 import Navbar from '@/components/global/navbar'
-import React from 'react'
-import Footer from '../(home)/Footer'
+import { ReactNode } from 'react'
+import Footer from '../../components/global/footer'
 
-type Props = { children: React.ReactNode }
+type Props = {
+  children: ReactNode
+}
 
 const Layout = ({ children }: Props) => {
   return (
