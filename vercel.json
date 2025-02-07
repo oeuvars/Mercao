@@ -4,16 +4,6 @@
        "DOCKER_BUILD": "true"
      }
    },
-   "functions": {
-     "app": {
-       "runtime": "bun@1.2.2",
-       "maxDuration": 60
-     }
-   },
-   "routes": [
-     {
-       "src": "/(.*)",
-       "dest": "/app/$1"
-     }
-   ]
+   "buildCommand": "docker build .",
+   "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
  }
